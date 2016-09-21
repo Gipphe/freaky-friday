@@ -1,6 +1,8 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+
 body {
 	background: #000;
-	font-family: 'Helvetica', 'Lucida Sans', sans-serif;
+	font-family: 'Open Sans', 'Helvetica', 'Lucida Sans', sans-serif;
 	color: #fff;
 }
 #division td:last-child {
