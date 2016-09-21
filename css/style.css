@@ -1,30 +1,41 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans);
 
+* {
+	font-family: 'Open Sans', 'Helvetica', 'Lucida Sans', sans-serif;
+}
 body {
 	background: #000;
-	font-family: 'Open Sans', 'Helvetica', 'Lucida Sans', sans-serif;
 	color: #fff;
+	padding: 0;
+	margin: 0;
 }
-#division td:last-child {
-	width: 10%;
+#sectioner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-#division td:first-child {
-	width: 90%;
-}
+
 #container {
-	background: #555;
+	box-sizing: border-box;
 	margin: 0 auto;
+	background: #555;
 	width: 95%;
 	border-radius: 1em;
 	padding: 1px 1em;
 	padding-bottom: 15px;
 }
 #main-portal {
+	width: 90%;
 	display: flex;
 	flex-flow: row wrap;
 	align-items: center;
 	justify-content: center;
 }
+#newly-added {
+	width: 10%;
+}
+/* Item box
+------------------*/
 .item {
 	display: inline-block;
 	flex-grow: 1;
@@ -33,6 +44,7 @@ body {
 	border-radius: 8px;
 	background: #999;
 	height: 200px;
+	min-width: 220px;
 	width: calc(100% * (1/5) - 5px - 1px);
 
 	display: flex;
@@ -40,8 +52,54 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+.profil-info td {
+	border-left: 1px solid #fff;
+	width: 25%;
+	padding: 4px;
+}
 
-img {
+.item img {
 	width: 200px;
 	border-radius: 8px;
+}
+
+/* Navbar
+--------------- */
+#navbar {
+	box-sizing: border-box;
+	width: 95%;
+	height: 30px;
+	background: #aaa;
+	border-radius: 0 0 0.5em 0.5em;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+
+	display: flex;
+	align-items: center;
+}
+#navbar ul {
+	margin: 0;
+	list-style-type: none;
+}
+#navbar ul li {
+	float: left;
+	margin-right: 10px;
+}
+#navbar,
+#navbar ul li a,
+#navbar ul li a:visited,
+#navbar ul li a:active {
+	color: #eee;
+	text-decoration: none;
+}
+#navbar ul li a:hover {
+	color: #fff;
+}
+#cart {
+	width: 150px;
+	position: absolute;
+	right: 0;
+	top: 5px;
 }
